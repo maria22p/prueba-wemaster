@@ -1,0 +1,40 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "off",
+    "quotes": ["error", "single"],
+    "indent": ["error", 2],
+    "comma-dangle": ["error", "never"],
+    "no-unused-vars": "warn"
+  }
+}
+
+Bases de datos: Las tablas deben nombrarse en camel como 'usuariosRegistrados', 'pedidosClientes', etc. Además, se debe
+utilizar comillas simples para los nombres de tablas y columnas, y se permite la coma al finalizar las declaraciones
+SQL.
+
+Variables: Se debe hacer uso camelCase, y las comillas simples deben utilizarse para cadenas de texto. Se omite el error
+de los console logs, asegurándose de que no haya advertencias sobre ellos durante las revisiones de código. Además, se
+debe advertir sobre las variables declaradas pero no utilizadas.
+
+Funciones: Se debe usar camelCase para los nombres de funciones. Se permite la coma al final de la lista de parámetros de función, 
+y las comillas simples deben usarse para los valores de retorno que son cadenas de texto.
+
+Clases: Se proporcionan directrices sobre cómo nombrar clases en el código, comenzando con
+mayúscula. Las comillas simples deben utilizarse para los nombres de las clases, y se permite la coma al finalizar la
+lista de propiedades de clase.
+
+Git: Se puede optar por utilizar camelCase para los nombres de ramas y commits, y se permite la coma al
+finalizar los mensajes de commit. Además, se deben utilizar comillas simples para los mensajes de commit que sean
+cadenas de texto.
+
+Se incluirán otras convenciones relevantes para el equipo de desarrollo, como nombres de archivos, carpetas,
+constantes, etc., utilizando camelCase cuando sea apropiado. Se permite la coma al finalizar la lista de elementos en
+archivos de configuración, y se debe advertir sobre la presencia de variables declaradas pero no utilizadas.
